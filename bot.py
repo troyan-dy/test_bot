@@ -1,8 +1,10 @@
+import time
+
 
 def main():
-    r = 0
     while 1:
-        r +=100000
+        print(time.time())
+        time.sleep(4)
 
 if __name__ == "__main__":
     main()
