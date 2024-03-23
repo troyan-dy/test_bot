@@ -1,6 +1,9 @@
 FROM python:3.11
-
-COPY bot.py bot.py
 EXPOSE 8080
 
-CMD python bot.py
+COPY app app
+COPY requirements.txt requirements.txt
+
+RUN pip install -r requirements.txt
+
+CMD uvicorn app:app
