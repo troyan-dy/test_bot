@@ -6,4 +6,4 @@ COPY requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt
 
-CMD uvicorn app:app
+CMD uvicorn app.app:app
